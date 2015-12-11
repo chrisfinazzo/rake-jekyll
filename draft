@@ -1,0 +1,30 @@
+#!/bin/bash
+
+# Set some variables
+
+export site_path=/path/to/yoursite
+drafts_path=/path/to/yoursite/_drafts
+title="$1"
+
+# Create the filename
+
+title=$(awk '{print tolower($0)}' <<<"$title")
+filename="$title.markdown"
+file_path="$drafts_path/$filename"
+echo "File path: $file_path"
+
+# Create the file, Add metadata fields
+
+cat >"$file_path" <<EOL
+---
+title: "$title"
+layout: post
+tags: 
+---
+EOL
+
+# Open the file in BBEdit
+
+bbedit "$file_path"
+
+exit 0
