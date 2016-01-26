@@ -2,4 +2,4 @@
 
 set -e # Stop the script if there's an error
 
-bundle exec jekyll doctor && bundle exec jekyll build && bundle exec jekyll serve --drafts
+bundle exec jekyll doctor && bundle exec jekyll build && bundle exec jekyll serve --open-url --drafts
