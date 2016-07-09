@@ -2,8 +2,8 @@
 
 # Set some variables
 
-export site_path=/path/to/yoursite
-drafts_path=/path/to/yoursite/_drafts
+export site_path=/path/to/example.com
+drafts_path=/path/to/example.com/_drafts
 title="$1"
 
 # Create the filename
