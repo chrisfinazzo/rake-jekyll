@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -eu
+
 # Set some variables
 
 export site_path=/path/to/example.com
