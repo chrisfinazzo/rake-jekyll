@@ -37,5 +37,5 @@ task :tags do
 end
 
 task :webmentions do
-    sh 'npx webmention https://chrisfinazzo.com/rss.xml --limit 1 --send'
+    sh 'npx webmention https://example.com/rss.xml --limit 1 --send'
 end
