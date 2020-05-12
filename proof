@@ -1,5 +1,0 @@
-#!/bin/bash
-
-set -e # Stop the script if there's an error
-
-bundle exec htmlproof ./_site

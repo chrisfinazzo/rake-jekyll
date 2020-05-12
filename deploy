@@ -1,5 +1,0 @@
-#!/bin/bash
-
-set -e # Stop the script if there's an error
-
-bundle exec jekyll doctor && time bundle exec jekyll build && git push origin master && rsync -crz --exclude-from='rsync-exclude.txt' --delete _site/ user@example.com:/path/to/example.com
