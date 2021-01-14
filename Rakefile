@@ -29,7 +29,7 @@ task :perf do
 end
 
 task :styles do
-    sh 'sass --sourcemap=none --watch scss:css'
+    sh 'sass --watch --style=compressed sass/app.scss:css/app.css'
 end
 
 task :tags do
