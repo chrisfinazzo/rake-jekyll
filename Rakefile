@@ -18,6 +18,7 @@ File.open("_drafts/new.md", "w") do |post|
       post.puts("---")
       post.puts
     end
+    sh 'bbedit _drafts/new.md'
 end
 
 task :github do
